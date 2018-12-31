@@ -6,8 +6,10 @@ import { Injectable } from '@angular/core';
 export class ServicioService {
 
   page:String;
+  chartInit:Boolean;
   constructor() {
     this.page = 'dashboard';
+    this.chartInit = false;
     // this.page = 'login';
     console.log('servicio principal');
    }

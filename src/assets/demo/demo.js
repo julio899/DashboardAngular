@@ -124,13 +124,14 @@ demo = {
         }]
       ];
       var websiteViewsChart = Chartist.Bar('#websiteViewsChart', dataWebsiteViewsChart, optionsWebsiteViewsChart, responsiveOptions);
-
+      
       //start animation for the Emails Subscription Chart
       md.startAnimationForBarChart(websiteViewsChart);
     }
   },
 
   initGoogleMaps: function() {
+  /*
     var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
     var mapOptions = {
       zoom: 13,
@@ -232,6 +233,7 @@ demo = {
 
     // To add the marker to the map, call setMap();
     marker.setMap(map);
+    */
   }
 
 }

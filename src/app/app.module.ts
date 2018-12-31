@@ -13,6 +13,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { TablesComponent } from './pages/tables/tables.component';
 import { NotificationsComponent } from './pages/notifications/notifications.component';
 import { UpgradeComponent } from './pages/upgrade/upgrade.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,11 +25,11 @@ import { UpgradeComponent } from './pages/upgrade/upgrade.component';
     ProfileComponent,
     TablesComponent,
     NotificationsComponent,
-    UpgradeComponent
+    UpgradeComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
