@@ -13,7 +13,7 @@ const app_routes: Routes = [
     { path: 'profile', component: ProfileComponent },
     { path: 'tables', component: TablesComponent },
     { path: 'notifications', component: NotificationsComponent },
-    { path: 'upgrade', component: UpgradeComponent }, 
+    { path: 'upgrade', component: UpgradeComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'login' }
 ];
 
