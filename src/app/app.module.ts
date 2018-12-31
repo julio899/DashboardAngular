@@ -10,6 +10,9 @@ import { NavbarComponent } from './share/navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { TablesComponent } from './pages/tables/tables.component';
+import { NotificationsComponent } from './pages/notifications/notifications.component';
+import { UpgradeComponent } from './pages/upgrade/upgrade.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +21,10 @@ import { ProfileComponent } from './pages/profile/profile.component';
     NavbarComponent,
     LoginComponent,
     DashboardComponent,
-    ProfileComponent
+    ProfileComponent,
+    TablesComponent,
+    NotificationsComponent,
+    UpgradeComponent
   ],
   imports: [
     BrowserModule,
