@@ -1,3 +1,4 @@
+import { ServicioService } from './services/servicio.service'; 
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'DashboardAngular';
+  page: String;
+  constructor(public _servicio: ServicioService ) {
+    this.page = _servicio.page;
+    console.log(_servicio.page);
+  }
 }

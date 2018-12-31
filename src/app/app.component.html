@@ -1,9 +1,13 @@
 <div class="wrapper ">
-  <app-sidebar></app-sidebar>
-  <div class="main-panel">
+  
+  <!-- --> 
+  <app-login *ngIf="page=='login'"></app-login>
+
+  <app-sidebar *ngIf="page!='login'"></app-sidebar>
+  
+  <div *ngIf="page!='login'" class="main-panel">
 
     <app-navbar></app-navbar>
-
     <div class="content">
       <div class="container-fluid">
         <div class="row">
@@ -428,7 +432,7 @@
   </div>
 </div>
   <!-- Engrane Flotante -->
-  <div class="fixed-plugin">
+  <div *ngIf="page!='login'" class="fixed-plugin">
     <div class="dropdown show-dropdown">
       <a href="#" data-toggle="dropdown">
         <i class="fa fa-cog fa-2x"> </i>
@@ -475,3 +479,10 @@
       </ul>
     </div>
   </div>
+
+
+<style *ngIf="page=='login'">
+  div.wrapper {
+    height: auto !important;
+  }
+</style>
